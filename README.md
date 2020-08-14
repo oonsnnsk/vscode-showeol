@@ -6,10 +6,10 @@ This extension visibly marks EOL, EOF, Tab, Half-width space, Full-width space.
 * You can change the symbols and colors.  
 
     Initial setting  
-    ![sample1](https://github.com/oonsnnsk/vscode-showeol/blob/master/images/sample1.png)  
+    ![sample1](https://github.com/oonsnnsk/vscode-showeol/blob/master/images/sample1.png?raw=true)  
 
     Customization  
-    ![sample2](https://github.com/oonsnnsk/vscode-showeol/blob/master/images/sample2.png)  
+    ![sample2](https://github.com/oonsnnsk/vscode-showeol/blob/master/images/sample2.png?raw=true)  
 
 ## Settings
 
