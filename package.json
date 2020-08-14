@@ -1,0 +1,118 @@
+{
+    "name": "showeol",
+    "displayName": "ShowEOL",
+    "description": "Show EOL, EOF, Half-width space, Full-width space, Tab",
+    "version": "0.0.1",
+    "publisher": "oonsnnsk",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "ShowEOL",
+            "properties": {
+                "showeol.space.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show Half-width space"
+                },
+                "showeol.space.character": {
+                    "type": "string",
+                    "default": "･",
+                    "description": "Half-width space charactor"
+                },
+                "showeol.space.color": {
+                    "type": "string",
+                    "default": "editorLineNumber.foreground",
+                    "description": "ex) '#229DCA', 'editorLineNumber.foreground'"
+                },
+                "showeol.zenkaku.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show Full-width space"
+                },
+                "showeol.zenkaku.character": {
+                    "type": "string",
+                    "default": "□",
+                    "description": "Full-width space charactor"
+                },
+                "showeol.zenkaku.color": {
+                    "type": "string",
+                    "default": "editorLineNumber.foreground",
+                    "description": "ex) '#229DCA', 'editorLineNumber.foreground'"
+                },
+                "showeol.tab.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show Tab"
+                },
+                "showeol.tab.character": {
+                    "type": "string",
+                    "default": "^",
+                    "description": "Tab charactor"
+                },
+                "showeol.tab.color": {
+                    "type": "string",
+                    "default": "editorLineNumber.foreground",
+                    "description": "ex) '#229DCA', 'editorLineNumber.foreground'"
+                },
+                "showeol.eol.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show End of line"
+                },
+                "showeol.eol.character.crlf": {
+                    "type": "string",
+                    "default": "↲",
+                    "description": "CRLF charactor"
+                },
+                "showeol.eol.character.lf": {
+                    "type": "string",
+                    "default": "↓",
+                    "description": "LF charactor"
+                },
+                "showeol.eol.color": {
+                    "type": "string",
+                    "default": "editorLineNumber.foreground",
+                    "description": "ex) '#229DCA', 'editorLineNumber.foreground'"
+                },
+                "showeol.eof.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show End of file"
+                },
+                "showeol.eof.character": {
+                    "type": "string",
+                    "default": "[EOF]",
+                    "description": "EOF charactor"
+                },
+                "showeol.eof.color": {
+                    "type": "string",
+                    "default": "editorLineNumber.foreground",
+                    "description": "ex) '#229DCA', 'editorLineNumber.foreground'"
+                }
+            }
+        }
+    }
+}
